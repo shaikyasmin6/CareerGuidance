@@ -10,8 +10,7 @@ import { InterComponent } from './inter/inter.component';
 
 const routes: Routes=[
   {path:'home',component:HomeComponent},
-  {path:'courses',component:CoursesComponent,children:[{path:'inter',component:InterComponent},
-{path:'',redirectTo:'/courses/inter',pathMatch:'full'}]},
+  {path:'courses',component:CoursesComponent,children:[{path:'inter',component:InterComponent}]},
   {path:'exams',component:ExamsComponent},
   {path:'news',component:NewsComponent},
   {path:'faq',component:FaqComponent},
